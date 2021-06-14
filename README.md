@@ -1,5 +1,15 @@
 # Algotrading NLP on 10-K's
-This is an algotrading sentiment trading strategy, written in Python, and applying NLP on 10-K's from the SEC EDGAR database. It works in the follwing way:
+In this project, NLP Analysis was carried out on 10-k financial statements to generate an alpha factor. For the dataset, the end of day from Quotemedia and Loughran-McDonald sentiment word lists were used.
+
+## Installation
+Use `git clone` to get a copy of this repository.
+
+```
+$ git clone https://github.com/lucaskienast/algotrading_random_forest_enhanced_alpha.git
+$ cd algotrading_random_forest_enhanced_alpha
+```
+
+## Method
 - define list of public companies and get their CIK's
 - use `BeautifulSoup` to get XML files for each CIK
 - download _complete submission text file_ for all CIK's with `sec_edgar_downloader`
@@ -14,3 +24,6 @@ This is an algotrading sentiment trading strategy, written in Python, and applyi
 - get stock data using `zipline`
 - implement cosine similarities as alpha factors and analyse factor returns using `alphalens`
 - compute Sharpe ratio for each sentiment factor
+
+## Results
+Alpha factors (negative, positive, uncertainty, litigous, constraining, and interesting) do not display monotonicity in quantiles of factor returns. The sentiment word _litigous_ achieved the highest Sharpe ratio at 2.23.
