@@ -6,7 +6,7 @@ Use `git clone` to get a copy of this repository.
 
 ```
 $ git clone https://github.com/lucaskienast/algotrading_NLP_on_10Ks.git
-$ cd algotrading_random_forest_enhanced_alpha
+$ cd algotrading_NLP_on_10Ks
 ```
 
 ## Method
