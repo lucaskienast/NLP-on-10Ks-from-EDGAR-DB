@@ -5,8 +5,8 @@ In this project, NLP Analysis was carried out on 10-k financial statements to ge
 Use `git clone` to get a copy of this repository.
 
 ```
-$ git clone https://github.com/lucaskienast/algotrading_NLP_on_10Ks.git
-$ cd algotrading_NLP_on_10Ks
+$ git clone https://github.com/lucaskienast/NLP-on-10Ks-from-EDGAR-DB.git
+$ cd NLP-on-10Ks-from-EDGAR-DB
 ```
 
 ## Method
